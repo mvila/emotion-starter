@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Emotion Starter Playground</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <style>
+      /* Avoid an Emotion warning */
+      h1:first-child,
+      h2:first-child,
+      h3:first-child,
+      h4:first-child,
+      h5:first-child,
+      h6:first-child {
+        margin-top: 0 !important;
+      }
+    </style>
+    <%= htmlWebpackPlugin.tags.headTags %>
+  </head>
+  <body>
+    <noscript><p>Sorry, this site requires JavaScript to be enabled.</p></noscript>
+    <div id="root"></div>
+    <%= htmlWebpackPlugin.tags.bodyTags %>
+  </body>
+</html>

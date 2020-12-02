@@ -1,0 +1,15 @@
+{
+  "name": "@emotion-starter/monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Get started with Emotion",
+  "keywords": [],
+  "author": "Manuel Vila <hi@mvila.me>",
+  "license": "MIT",
+  "repository": "https://github.com/mvila/emotion-starter",
+  "prettier": "@mvila/prettierrc",
+  "devDependencies": {
+    "@mvila/prettierrc": "^1.1.0",
+    "prettier": "^2.1.2"
+  }
+}

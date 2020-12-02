@@ -1,0 +1,41 @@
+{
+  "name": "@emotion-starter/react",
+  "version": "1.0.39",
+  "description": "Get started with React and Emotion",
+  "keywords": [],
+  "author": "Manuel Vila <hi@mvila.me>",
+  "license": "MIT",
+  "repository": "https://github.com/mvila/emotion-starter/tree/master/packages/react",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/node-cjs/index.js",
+  "module": "dist/node-esm/index.js",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "build": "dev-tools build:ts-library",
+    "prepare": "npm run build",
+    "publish:package": "dev-tools publish:package",
+    "update": "dev-tools update:dependencies"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "react-style-reset": "^1.3.2",
+    "tslib": "^2.0.3"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.1.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.1.1",
+    "@mvila/dev-tools": "^1.0.26",
+    "@mvila/tsconfig": "^1.0.4",
+    "@types/lodash": "^4.14.162",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0"
+  }
+}
