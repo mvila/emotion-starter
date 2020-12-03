@@ -38,7 +38,7 @@ export function Select({
     'paddingBottom': yPadding,
     paddingLeft,
     fontSize,
-    'lineHeight': theme.lineHeights.normal,
+    'lineHeight': theme.lineHeights.small,
     'color': theme.colors.text.normal,
     'backgroundColor': 'transparent',
     'borderWidth': '1px',
