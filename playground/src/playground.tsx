@@ -87,6 +87,14 @@ export function Playground() {
         laboris nisi ut aliquip ex ea commodo consequat.
       </p>
 
+      <h5>More Highlighted Background</h5>
+
+      <p css={{backgroundColor: theme.colors.background.moreHighlighted, padding: '.25rem .5rem'}}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+
       <h4>Small Size</h4>
 
       <p css={{fontSize: theme.fontSizes.small}}>

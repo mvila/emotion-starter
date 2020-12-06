@@ -14,7 +14,8 @@ export const baseTheme = {
 
     background: {
       normal: '#eceff1', // Blue Grey 50
-      highlighted: '#cfd8dc' // Blue Grey 100
+      highlighted: '#dee3e6', // Blue Grey 50 5% Darker,
+      moreHighlighted: '#cfd8dc' // Blue Grey 100
     },
 
     border: {
@@ -107,12 +108,13 @@ export const darkTheme = {
     },
 
     background: {
-      normal: '#263238', // Blue Grey 900
-      highlighted: '#455a64' // Blue Grey 700
+      normal: '#13191c', // Blue Grey 900 50% Darker
+      highlighted: '#263238', // Blue Grey 900
+      moreHighlighted: '#37474f' // Blue Grey 800
     },
 
     border: {
-      normal: '#607d8b' // Blue Grey 500
+      normal: '#546e7a' // Blue Grey 600
     },
 
     neutral: {
