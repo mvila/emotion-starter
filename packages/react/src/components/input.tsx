@@ -1,4 +1,4 @@
-import {Fragment, useCallback, useMemo, useRef} from 'react';
+import React, {Fragment, useCallback, useMemo, useRef, forwardRef} from 'react';
 import {jsx, useTheme, Theme} from '@emotion/react';
 
 type InputSize = 'normal' | 'small' | 'large';
@@ -7,19 +7,32 @@ type InputProps = Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'> & {
   size?: InputSize;
 };
 
-export function Input({type, ...props}: InputProps) {
+export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
+  {type, ...props},
+  ref
+) {
   if (type === 'checkbox' || type === 'radio') {
     return <ToggleInput type={type} {...props} />;
   } else {
-    return <TextInput type={type} {...props} />;
+    return <TextInput forwardedRef={ref} type={type} {...props} />;
   }
-}
+});
 
-function TextInput({size, disabled, ...props}: InputProps) {
+function TextInput({
+  forwardedRef,
+  size,
+  disabled,
+  ...props
+}: InputProps & {forwardedRef: React.ForwardedRef<HTMLInputElement>}) {
   const theme = useTheme();
 
   return (
-    <input css={buildInputOrTextAreaCSS(theme, {size, disabled})} disabled={disabled} {...props} />
+    <input
+      ref={forwardedRef}
+      css={buildInputOrTextAreaCSS(theme, {size, disabled})}
+      disabled={disabled}
+      {...props}
+    />
   );
 }
 

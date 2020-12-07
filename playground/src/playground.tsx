@@ -1,4 +1,4 @@
-import {useCallback, useState} from 'react';
+import {useCallback, useState, useRef} from 'react';
 import {jsx, useTheme} from '@emotion/react';
 import {Input, TextArea, Select, Button} from '@emotion-starter/react';
 
@@ -10,6 +10,8 @@ export function Playground() {
   const setMode = useCallback((mode: string) => {
     window.localStorage.setItem('mode', mode);
   }, []);
+
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const [checkboxValue, setCheckboxValue] = useState(false);
   const [radioValue, setRadioValue] = useState('');
@@ -119,8 +121,16 @@ export function Playground() {
 
       <h5>Normal Size</h5>
 
-      <div css={controlStyle}>
-        <Input placeholder="Placeholder" disabled={false} />
+      <div css={{...controlStyle, flexDirection: 'row'}}>
+        <Input ref={inputRef} placeholder="Placeholder" disabled={false} css={{flex: 1}} />
+        <Button
+          onClick={() => {
+            inputRef.current?.focus();
+          }}
+          css={{marginLeft: '.5rem'}}
+        >
+          Focus
+        </Button>
       </div>
 
       <h5>Small Size</h5>

@@ -6,6 +6,7 @@
     "lib": ["ES2018", "DOM"],
     "jsx": "react",
     "jsxFactory": "jsx",
+    "jsxFragmentFactory": "Fragment",
     "sourceMap": true,
     "strict": true,
     "moduleResolution": "node",
