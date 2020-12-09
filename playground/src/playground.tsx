@@ -421,6 +421,22 @@ export function Playground() {
           </Button>
         </div>
       </div>
+
+      <hr />
+
+      <h3 css={sectionStyle}>Responsive Layout</h3>
+
+      <div
+        css={theme.responsive({
+          height: '100px',
+          backgroundColor: [
+            theme.colors.neutral.normal,
+            theme.colors.primary.normal,
+            theme.colors.secondary.normal,
+            theme.colors.positive.normal
+          ]
+        })}
+      />
     </div>
   );
 }

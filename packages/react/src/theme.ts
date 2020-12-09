@@ -1,6 +1,9 @@
+import facepaint from 'facepaint';
 import merge from 'lodash/merge';
 
 export type ColorName = 'neutral' | 'primary' | 'secondary' | 'positive' | 'negative';
+
+const MEMOIZED_RESPONSIVE = Symbol('memoizedResponsive');
 
 export const baseTheme = {
   colors: {
@@ -96,6 +99,18 @@ export const baseTheme = {
 
   shadows: {
     normal: '1px 1px 3px 0 #999'
+  },
+
+  breakpoints: ['@media(max-width: 991px)', '@media(max-width: 767px)', '@media(max-width: 479px)'],
+
+  [MEMOIZED_RESPONSIVE]: undefined as facepaint.DynamicStyleFunction | undefined,
+
+  get responsive() {
+    if (this[MEMOIZED_RESPONSIVE] === undefined) {
+      this[MEMOIZED_RESPONSIVE] = facepaint(this.breakpoints);
+    }
+
+    return this[MEMOIZED_RESPONSIVE]!;
   }
 };
 
