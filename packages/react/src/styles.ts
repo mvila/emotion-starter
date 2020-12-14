@@ -67,24 +67,12 @@ export function getStyles(theme: Theme) {
         fontSize: theme.fontSizes.small
       },
       'table': {
-        display: 'block',
-        width: '100%',
-        overflow: 'auto',
-        marginTop: '1.5rem',
-        marginBottom: '1.5rem',
         borderSpacing: 0,
         borderCollapse: 'collapse',
         borderColor: theme.colors.border.normal
       },
-      'table tr': {
-        borderTop: `1px solid ${theme.colors.border.normal}`
-      },
-      'table th, table td': {
-        padding: '.3rem .6rem',
+      'th, td': {
         border: `1px solid ${theme.colors.border.normal}`
-      },
-      'table th': {
-        fontWeight: '600'
       },
       'blockquote': {
         margin: '1.5rem 0',
