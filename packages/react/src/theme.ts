@@ -70,7 +70,13 @@ export const baseTheme = {
   fontSizes: {
     normal: '16px',
     small: '85%',
-    large: '120%'
+    large: '120%',
+    h1: '3.052rem',
+    h2: '2.441rem',
+    h3: '1.953rem',
+    h4: '1.563rem',
+    h5: '1.25rem',
+    h6: '1rem'
   },
 
   fontWeights: {

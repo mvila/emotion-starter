@@ -29,12 +29,12 @@ export function getStyles(theme: Theme) {
         lineHeight: theme.lineHeights.small,
         color: theme.colors.text.normal
       },
-      'h1': {marginTop: '3.052rem', fontSize: '3.052rem'},
-      'h2': {marginTop: '2.441rem', fontSize: '2.441rem'},
-      'h3': {marginTop: '1.953rem', fontSize: '1.953rem'},
-      'h4': {marginTop: '1.563rem', fontSize: '1.563rem'},
-      'h5': {marginTop: '1.25rem', fontSize: '1.25rem'},
-      'h6': {marginTop: '1rem', fontSize: '1rem'},
+      'h1': {marginTop: theme.fontSizes.h1, fontSize: theme.fontSizes.h1},
+      'h2': {marginTop: theme.fontSizes.h2, fontSize: theme.fontSizes.h2},
+      'h3': {marginTop: theme.fontSizes.h3, fontSize: theme.fontSizes.h3},
+      'h4': {marginTop: theme.fontSizes.h4, fontSize: theme.fontSizes.h4},
+      'h5': {marginTop: theme.fontSizes.h5, fontSize: theme.fontSizes.h5},
+      'h6': {marginTop: theme.fontSizes.h6, fontSize: theme.fontSizes.h6},
       'hr': {
         marginTop: '1.5rem',
         marginBottom: '1.5rem',
