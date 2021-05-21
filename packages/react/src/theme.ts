@@ -1,7 +1,7 @@
 import facepaint from 'facepaint';
 import merge from 'lodash/merge';
 
-export type ColorName = 'neutral' | 'primary' | 'secondary' | 'positive' | 'negative';
+export type ColorName = 'neutral' | 'primary' | 'secondary' | 'tertiary' | 'positive' | 'negative';
 
 const MEMOIZED_RESPONSIVE = Symbol('memoizedResponsive');
 
@@ -44,6 +44,13 @@ export const baseTheme = {
       highlighted: '#c60055', // Pink A200 Dark
       muted: '#ff79b0', // Pink A200 Light
       textOnNormal: '#ffffff'
+    },
+
+    tertiary: {
+      normal: '#aeea00', // Lime A700
+      highlighted: '#79b700', // Lime A700 Dark
+      muted: '#e4ff54', // Lime A700 Light
+      textOnNormal: '#000000'
     },
 
     positive: {
@@ -153,6 +160,11 @@ export const darkTheme = {
     secondary: {
       highlighted: baseTheme.colors.secondary.muted,
       muted: baseTheme.colors.secondary.highlighted
+    },
+
+    tertiary: {
+      highlighted: baseTheme.colors.tertiary.muted,
+      muted: baseTheme.colors.tertiary.highlighted
     },
 
     positive: {

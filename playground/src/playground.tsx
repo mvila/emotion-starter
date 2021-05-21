@@ -20,7 +20,7 @@ export function Playground() {
   const controlStyle = {width: 300, display: 'flex', flexDirection: 'column'} as const;
 
   return (
-    <div style={{maxWidth: '700px', margin: '40px auto'}}>
+    <div style={{maxWidth: '720px', margin: '40px auto'}}>
       <h2>Emotion Starter Playground</h2>
 
       <div css={{marginBottom: '3rem'}}>
@@ -267,6 +267,9 @@ export function Playground() {
           <Button color="secondary">Secondary</Button>
         </div>
         <div css={{marginRight: '.5rem'}}>
+          <Button color="tertiary">Tertiary</Button>
+        </div>
+        <div css={{marginRight: '.5rem'}}>
           <Button color="positive">Positive</Button>
         </div>
         <div css={{marginRight: '.5rem'}}>
@@ -288,6 +291,11 @@ export function Playground() {
         <div css={{marginRight: '.5rem'}}>
           <Button color="secondary" variant="outline">
             Secondary
+          </Button>
+        </div>
+        <div css={{marginRight: '.5rem'}}>
+          <Button color="tertiary" variant="outline">
+            Tertiary
           </Button>
         </div>
         <div css={{marginRight: '.5rem'}}>
@@ -321,6 +329,11 @@ export function Playground() {
           </Button>
         </div>
         <div css={{marginRight: '.5rem'}}>
+          <Button size="small" color="tertiary">
+            Tertiary
+          </Button>
+        </div>
+        <div css={{marginRight: '.5rem'}}>
           <Button size="small" color="positive">
             Positive
           </Button>
@@ -348,6 +361,11 @@ export function Playground() {
         <div css={{marginRight: '.5rem'}}>
           <Button size="small" color="secondary" variant="outline">
             Secondary
+          </Button>
+        </div>
+        <div css={{marginRight: '.5rem'}}>
+          <Button size="small" color="tertiary" variant="outline">
+            Tertiary
           </Button>
         </div>
         <div css={{marginRight: '.5rem'}}>
@@ -381,6 +399,11 @@ export function Playground() {
           </Button>
         </div>
         <div css={{marginRight: '.5rem'}}>
+          <Button size="large" color="tertiary">
+            Tertiary
+          </Button>
+        </div>
+        <div css={{marginRight: '.5rem'}}>
           <Button size="large" color="positive">
             Positive
           </Button>
@@ -408,6 +431,11 @@ export function Playground() {
         <div css={{marginRight: '.5rem'}}>
           <Button size="large" color="secondary" variant="outline">
             Secondary
+          </Button>
+        </div>
+        <div css={{marginRight: '.5rem'}}>
+          <Button size="large" color="tertiary" variant="outline">
+            Tertiary
           </Button>
         </div>
         <div css={{marginRight: '.5rem'}}>
