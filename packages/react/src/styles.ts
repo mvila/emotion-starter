@@ -1,7 +1,7 @@
 import type {Theme} from '@emotion/react';
 import {normalize} from 'react-style-reset';
 
-export function getStyles(theme: Theme) {
+export function getGlobalStyles(theme: Theme) {
   return [
     normalize,
     {
@@ -81,5 +81,5 @@ export function getStyles(theme: Theme) {
         borderLeft: `3px solid ${theme.colors.border.normal}`
       }
     }
-  ] as any;
+  ] as any[];
 }
