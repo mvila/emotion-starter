@@ -13,7 +13,7 @@ export function EmotionStarter({
   mode?: 'light' | 'dark';
   theme?: any;
   globalStylesGetter?: (theme: Theme) => any;
-  children: React.ReactNode;
+  children: React.ReactNode | ((theme: Theme) => React.ReactNode);
 }) {
   const {theme, styles} = useMemo(() => {
     const theme = getTheme({mode, theme: customTheme});
@@ -29,7 +29,7 @@ export function EmotionStarter({
   return (
     <ThemeProvider theme={theme}>
       <Global styles={styles} />
-      {children}
+      {typeof children === 'function' ? children(theme) : children}
     </ThemeProvider>
   );
 }
