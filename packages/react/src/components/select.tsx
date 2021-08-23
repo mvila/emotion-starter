@@ -54,8 +54,7 @@ export function Select({
     'backgroundRepeat': 'no-repeat',
     backgroundPosition,
     'backgroundSize': '8px 10px',
-    'MozAppearance': 'none',
-    'WebkitAppearance': 'none',
+    'appearance': 'none',
     ':focus': {
       borderColor: theme.colors.primary.normal
     }

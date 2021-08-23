@@ -79,6 +79,10 @@ export function getGlobalStyles(theme: Theme) {
         paddingLeft: '1rem',
         color: theme.colors.text.muted,
         borderLeft: `3px solid ${theme.colors.border.normal}`
+      },
+      'option': {
+        color: theme.colors.text.normal,
+        backgroundColor: theme.colors.background.moreHighlighted
       }
     }
   ] as any[];
