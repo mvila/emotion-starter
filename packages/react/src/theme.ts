@@ -76,6 +76,7 @@ export const baseTheme = {
 
   fontSizes: {
     normal: '16px',
+    smaller: '75%',
     small: '85%',
     large: '120%',
     h1: '3.052rem',
@@ -100,12 +101,14 @@ export const baseTheme = {
 
   lineHeights: {
     normal: 1.6,
+    smaller: 1.1,
     small: 1.3,
     large: 2
   },
 
   radii: {
     normal: '.25rem',
+    smaller: '.15rem',
     small: '.2rem',
     large: '.3rem'
   },
