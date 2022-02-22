@@ -148,7 +148,7 @@ function CheckboxMark({checked, onClick, disabled}: InputProps) {
   const theme = useTheme();
 
   const foregroundColor = checked ? theme.colors.background.normal : undefined;
-  const backgroundColor = checked ? theme.colors.primary.normal : theme.colors.background.normal;
+  const backgroundColor = checked ? theme.colors.primary.normal : 'transparent';
   const borderColor = checked ? 'transparent' : theme.colors.text.muted;
 
   const encodedSVG = useMemo(
@@ -196,7 +196,7 @@ function RadioMark({checked, onClick, disabled}: InputProps) {
   const theme = useTheme();
 
   const foregroundColor = checked ? theme.colors.background.normal : undefined;
-  const backgroundColor = checked ? theme.colors.primary.normal : theme.colors.background.normal;
+  const backgroundColor = checked ? theme.colors.primary.normal : 'transparent';
   const borderColor = checked ? 'transparent' : theme.colors.text.muted;
 
   return (
