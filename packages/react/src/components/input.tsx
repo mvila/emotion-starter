@@ -40,17 +40,21 @@ type TextAreaProps = React.TextareaHTMLAttributes<HTMLTextAreaElement> & {
   size?: InputSize;
 };
 
-export function TextArea({size, disabled, ...props}: TextAreaProps) {
+export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(function TextArea(
+  {size, disabled, ...props}: TextAreaProps,
+  ref
+) {
   const theme = useTheme();
 
   return (
     <textarea
+      ref={ref}
       css={buildInputOrTextAreaCSS(theme, {size, disabled})}
       disabled={disabled}
       {...props}
     />
   );
-}
+});
 
 function buildInputOrTextAreaCSS(
   theme: Theme,

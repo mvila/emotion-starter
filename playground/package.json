@@ -7,7 +7,7 @@
     "start": "webpack serve --mode=development"
   },
   "dependencies": {
-    "@emotion-starter/react": "^1.0.70",
+    "@emotion-starter/react": "^1.0.72",
     "@emotion/react": "^11.4.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
