@@ -9,7 +9,7 @@
   "repository": "https://github.com/mvila/emotion-starter",
   "prettier": "@mvila/prettierrc",
   "devDependencies": {
-    "@mvila/prettierrc": "^1.1.0",
-    "prettier": "^2.1.2"
+    "@mvila/prettierrc": "^1.1.1",
+    "prettier": "^2.7.1"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@emotion-starter/react",
-  "version": "1.0.74",
+  "version": "1.0.75",
   "description": "Get started with React and Emotion",
   "keywords": [],
   "author": "Manuel Vila <hi@mvila.me>",
@@ -12,7 +12,7 @@
   "main": "dist/node-cjs/index.js",
   "module": "dist/node-esm/index.js",
   "engines": {
-    "node": ">=10.0.0"
+    "node": ">=16.0.0"
   },
   "scripts": {
     "build": "dev-tools build:ts-library",
@@ -32,12 +32,12 @@
     "react-dom": ">=17.0.1"
   },
   "devDependencies": {
-    "@emotion/react": "^11.10.4",
-    "@mvila/dev-tools": "^1.0.30",
-    "@mvila/tsconfig": "^1.0.5",
+    "@emotion/react": "^11.10.5",
+    "@mvila/dev-tools": "^1.2.1",
+    "@mvila/tsconfig": "^1.0.6",
     "@types/facepaint": "^1.2.2",
-    "@types/lodash": "^4.14.184",
-    "@types/react": "^17.0.49",
-    "@types/react-dom": "^17.0.17"
+    "@types/lodash": "^4.14.186",
+    "@types/react": "^17.0.52",
+    "@types/react-dom": "^17.0.18"
   }
 }
